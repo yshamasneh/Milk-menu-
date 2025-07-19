@@ -1,279 +1,147 @@
-  body {
-    font-family: 'Cairo', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #fef7f9, #fff3f6);
-    color: #3b0a18;
-    text-align: center;
-  }
-
-  header {
-    background: linear-gradient(90deg, #8B1538, #A0153E, #7D0A0A);
-    color: white;
-    padding: 25px 10px;
-    font-size: 32px;
-    font-weight: bold;
-    box-shadow: 0 4px 12px rgba(139, 21, 56, 0.3);
-    letter-spacing: 1px;
-  }
-
-  .brands {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 50px 20px;
-    flex-wrap: wrap;
-  }
-
-  .brand {
-    cursor: pointer;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background: white;
-    border-radius: 20px;
-    padding: 20px 10px;
-    box-shadow: 0 8px 25px rgba(160, 21, 62, 0.08);
-  }
-
-  .brand img {
-    width: 160px;
-    height: 160px;
-    border-radius: 20px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease;
-  }
-
-  .brand:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(139, 21, 56, 0.2);
-  }
-
-  .brand:hover img {
-    transform: scale(1.05);
-  }
-
-  .desc {
-    margin-top: 12px;
-    font-size: 18px;
-    font-weight: 600;
-    color: #8B1538;
-  }
-
-  @media (max-width: 600px) {
-    header {
-      font-size: 24px;
-    }
-
-    .brand img {
-      width: 130px;
-      height: 130px;
-    }
-
-    .desc {
-      font-size: 16px;
-    }
-  }
- body {
-      font-family: 'Cairo', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fff8f0;
-      color: #222;
-    }
-    header {
-      background-color: #912f40;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      font-size: 26px;
-    }
-    .navbar {
-      background-color: #444;
-      padding: 10px;
-      text-align: center;
-    }
-    .navbar a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 18px;
-    }
-    .navbar a:hover {
-      text-decoration: underline;
-    }
-    .section-links {
-      text-align: center;
-      background-color: #eee;
-      padding: 10px 0;
-    }
-    .section-links a {
-      color: #912f40;
-      margin: 0 10px;
-      font-weight: bold;
-      font-size: 16px;
-      text-decoration: none;
-    }
-    .section-links a:hover {
-      text-decoration: underline;
-    }
-    h2 {
-      background-color: #912f40;
-      color: white;
-      padding: 10px;
-      text-align: center;
-      margin-top: 40px;
-      font-size: 22px;
-      border-radius: 8px;
-      width: 90%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    ul {
-      list-style: none;
-      padding: 0 20px;
-    }
-    li {
-      background: #fff;
-      margin: 10px auto;
-      padding: 12px;
-      border-radius: 12px;
-      max-width: 600px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      font-size: 18px;
-    }
-    table {
-      margin: 20px auto;
-      border-collapse: collapse;
-      width: 90%;
-      max-width: 600px;
-      background: #fff;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      border-radius: 12px;
-      overflow: hidden;
-    }
-    th, td {
-      padding: 12px;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
-    }
-    th {
-      background-color: #912f40;
-      color: white;
-    }
-
-    body {
-  font-weight: bold;
-}
-
-  body {
-    font-family: 'Cairo', sans-serif;
-    background-color: #fff9f3;
-    color: #333;
-  }
-  h2, ul li {
-    font-weight: bold;
-  }
-body {
-  font-family: 'Cairo', sans-serif;
-  background-color: #fff5f8;
+/* Reset */
+* {
   margin: 0;
   padding: 0;
-  color: #333;
-  font-weight: bold; /* لتغليظ الخط */
+  box-sizing: border-box;
 }
 
+/* خلفية عامة */
+body {
+  font-family: 'Cairo', sans-serif;
+  background: linear-gradient(135deg, #600000 0%, #8B0000 50%, #4B0000 100%);
+  min-height: 100vh;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f9f9f9;
+}
+
+/* الهيدر */
 header {
-  background-color: #f472b6;
-  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  width: 100%;
+}
+
+/* العنوان الرئيسي */
+.welcome-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #FFE4E1;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+/* الموقع */
+.location {
+  font-size: 1rem;
+  color: #FFDADA;
+  background: rgba(139, 0, 0, 0.3);
+  padding: 8px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* الحاوية العامة */
+.brands-container {
+  max-width: 100%;
+  width: 100%;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+.brands {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+/* كل عنصر */
+.brand {
+  background: rgba(255,255,255,0.05);
+  border-radius: 15px;
   padding: 20px;
   text-align: center;
-  font-size: 26px;
-}
-
-.navbar {
-  background-color: #444;
-  padding: 10px;
-  text-align: center;
-}
-
-.navbar a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 15px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.navbar a:hover {
-  text-decoration: underline;
-}
-
-h2 {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 24px;
-  color: #b91c1c;
-  border-bottom: 2px solid #fbcfe8;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-.menu-section {
-  margin: 20px auto;
-  max-width: 800px;
-  padding: 15px;
-  background-color: #ffe4ed;
-  border-radius: 15px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  background: white;
-  margin: 10px 0;
-  padding: 12px 18px;
-  border-radius: 12px;
-  font-size: 18px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-}
-
-table {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(139, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.2);
   width: 100%;
-  border-collapse: collapse;
-  margin-top: 15px;
+  max-width: 320px;
+  backdrop-filter: blur(8px);
 }
 
-th, td {
-  border: 1px solid #ccc;
-  padding: 12px;
-  text-align: center;
-  font-size: 18px;
+.brand:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(139, 0, 0, 0.4);
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255, 255, 255, 0.4);
 }
 
-th {
-  background-color: #fbcfe8;
-  color: #b91c1c;
+/* الصورة */
+.brand img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
 }
 
-td {
-  background-color: #fff;
+.brand:hover img {
+  transform: scale(1.05);
 }
 
+/* العناوين */
+.brand-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #FFDADA;
+  margin-bottom: 8px;
+}
+
+.brand-desc {
+  font-size: 1rem;
+  color: #FFEEEE;
+  line-height: 1.5;
+}
+
+/* ألوان خاصة إذا بدك */
+.milk-plus {
+  background: linear-gradient(135deg, #7A0000, #B22222);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.milk-plus .brand-title,
+.milk-plus .brand-desc {
+  color: #FFFFFF;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-
-  .menu-section {
-    padding: 10px;
-  }
-
-  table, th, td {
-    font-size: 14px;
-  }
+  .welcome-title { font-size: 1.5rem; }
+  .location { font-size: 0.9rem; padding: 6px 12px; }
+  .brands-container { margin-top: 15px; padding: 0 5px; }
+  .brands { gap: 15px; }
+  .brand { padding: 18px; max-width: 100%; }
+  .brand img { width: 80px; height: 80px; }
+  .brand-title { font-size: 1.2rem; }
+  .brand-desc { font-size: 0.95rem; }
 }
 
+@media (max-width: 480px) {
+  body { padding: 10px; }
+  .welcome-title { font-size: 1.3rem; }
+  .location { font-size: 0.85rem; }
+  .brand { padding: 15px; }
+  .brand img { width: 70px; height: 70px; }
+  .brand-title { font-size: 1.1rem; }
+  .brand-desc { font-size: 0.9rem; }
+}
+/*mohamad shamsneh 
