@@ -8,7 +8,7 @@
 /* خلفية عامة */
 body {
   font-family: 'Cairo', sans-serif;
-  background: linear-gradient(135deg, #600000 0%, #8B0000 50%, #4B0000 100%);
+  background: radial-gradient(circle at center, #6b0000, #4b0000);
   min-height: 100vh;
   padding: 15px;
   display: flex;
@@ -92,6 +92,8 @@ header {
   margin-bottom: 15px;
   border-radius: 12px;
   transition: transform 0.3s ease;
+  background-color: transparent;
+  mix-blend-mode: multiply;
 }
 
 .brand:hover img {
@@ -112,14 +114,23 @@ header {
   line-height: 1.5;
 }
 
-/* ألوان خاصة إذا بدك */
+/* كرت Milk Plus */
 .milk-plus {
   background: linear-gradient(135deg, #7A0000, #B22222);
   border-color: rgba(255, 255, 255, 0.2);
 }
-
 .milk-plus .brand-title,
 .milk-plus .brand-desc {
+  color: #FFFFFF;
+}
+
+/* كرت Milk */
+.milk {
+  background: linear-gradient(135deg, #8B0000, #A52A2A);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.milk .brand-title,
+.milk .brand-desc {
   color: #FFFFFF;
 }
 
@@ -144,4 +155,3 @@ header {
   .brand-title { font-size: 1.1rem; }
   .brand-desc { font-size: 0.9rem; }
 }
-/*mohamad shamsneh 
