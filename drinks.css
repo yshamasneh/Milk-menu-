@@ -131,3 +131,39 @@ li:hover, p:hover {
     li {
       margin-bottom: 10px;
     }
+    body {
+  font-weight: bold;
+}
+.section-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.section-links a {
+  background-color: #f3f3f3;
+  padding: 8px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #800020;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: background-color 0.3s;
+}
+
+.section-links a:hover {
+  background-color: #ffe6e6;
+}
+
+@media (max-width: 768px) {
+  .section-links a {
+    flex: 1 1 calc(45% - 10px); /* تخلي كل عنصر ياخذ تقريبا نصف العرض */
+    text-align: center;
+    font-size: 13px;
+  }
+}
+
