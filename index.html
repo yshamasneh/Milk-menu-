@@ -4,34 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Milk Home</title>
-   <link rel="stylesheet" href="home_style.css">
-
-
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-  
+  <link rel="stylesheet" href="home_style.css">
+
+
 </head>
 <body>
   <header>
-    مرحبًا بك في Milk و Milk Plus
+    <div class="welcome-title">مرحبًا بك في Milk & Milk Plus</div>
+    <div class="location">📍 الشارع الرئيسي - بدو المشاهد</div>
   </header>
 
-  <div class="brands">
-    <div class="brand" onclick="location.href='food.html'">
-      <img src="plus_milk .png" alt="Milk Plus Logo">
-      <div class="desc">🍽 Milk Plus (فرع الأكل)</div>
-    </div>
-    <div class="brand" onclick="goToMilkMenus()">
-      <img src="MIlk.png" alt="Milk Logo">
-      <div class="desc">🍰🥤 Milk (فرع الحلويات والمشروبات)</div>
+  <div class="brands-container">
+    <div class="brands">
+      <div class="brand milk-plus" onclick="location.href='food.html'">
+        <img src="plus_milk .png" alt="Milk Plus Logo">
+        <div class="brand-title">Milk Plus</div>
+        <div class="brand-desc">🍽️ فرع الأكل والوجبات الرئيسية</div>
+      </div>
+      
+      <div class="brand milk-regular" onclick="goToMilkMenus()">
+        <img src="MIlk.png" alt="Milk Logo">
+        <div class="brand-title">Milk</div>
+        <div class="brand-desc">🍰🥤 فرع الحلويات والمشروبات</div>
+      </div>
     </div>
   </div>
-<script>
-  function goToMilkMenus() {
-    window.location.href = 'desserts.html';
-    setTimeout(() => {
-      window.open('drinks.html', '_blank');
-    }, 500);
-  }
-</script>
+
+  <script>
+    function goToMilkMenus() {
+      window.location.href = 'desserts.html';
+      setTimeout(() => {
+        window.open('drinks.html', '_blank');
+      }, 500);
+    }
+  </script>
 </body>
 </html>
