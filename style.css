@@ -1,0 +1,80 @@
+/* تنسيقات الشاشة الكبيرة (الافتراضية) */
+.menu-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* لما تكون الشاشة صغيرة (تلفون مثلاً) */
+@media (max-width: 768px) {
+  .menu-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-section li {
+    width: 90%; /* خلي كل صنف ياخد عرض أكبر */
+    font-size: 18px; /* كبر الخط */
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+  }
+}
+/* تنسيق قائمة الأقسام الأساسية */
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* أزرار التنقل نفسها */
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links li a {
+  display: inline-block;
+  padding: 10px 15px;
+  border: 2px solid #b3003c;
+  border-radius: 12px;
+  background-color: #fff0f5;
+  color: #8B0000;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+/* تأثير hover */
+.nav-links li a:hover {
+  background-color: #ffe6eb;
+  transform: scale(1.05);
+}
+
+/* معالجة الشكل على الهواتف */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .nav-links li a {
+    font-size: 14px;
+    padding: 8px 12px;
+    min-width: 40%;
+    text-align: center;
+  }
+}
