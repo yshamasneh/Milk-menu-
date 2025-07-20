@@ -166,4 +166,16 @@ li:hover, p:hover {
     font-size: 13px;
   }
 }
+li {
+  direction: rtl;
+}
+
+li .currency {
+  font-family: inherit;
+  font-size: 95%;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0 2px;
+}
+
 
